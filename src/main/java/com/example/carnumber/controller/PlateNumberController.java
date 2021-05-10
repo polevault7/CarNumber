@@ -32,8 +32,6 @@ public class PlateNumberController {
         return repository.getById(id);
     }
 
-    //
-//
     @PostMapping
     public PlateNumber save(@RequestBody PlateNumber item) {
         return repository.save(item);
