@@ -33,7 +33,7 @@ public class PlateNumberRepository {
         );
     }
 
-    public Boolean isExists(String plateNumber) {
+    public Boolean isExist(String plateNumber) {
 
         Long count = template.queryForObject("select count(plateNumber) as count from numbers" +
                         " where plateNumber = :plateNumber",
