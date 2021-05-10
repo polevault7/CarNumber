@@ -23,7 +23,7 @@ public class PlateNumberController {
     }
 
     @GetMapping("/isExist/{plate}")
-    public Boolean isExists(@PathVariable String plate) {
+    public Boolean isExist(@PathVariable String plate) {
         return repository.isExists(plate);
     }
 
