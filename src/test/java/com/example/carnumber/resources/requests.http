@@ -1,0 +1,26 @@
+GET http://localhost:8080/numbers
+
+###
+
+GET http://localhost:8080/numbers/1
+
+###
+
+POST http://localhost:8080/numbers
+Content-Type: application/json
+
+{
+  "id": 0,
+  "firstLetter": "А",
+  "number": 500,
+  "secondLetter": "У",
+  "thirdLetter": "В"
+}
+
+###
+
+GET http://localhost:8080/numbers/generateRandom/
+
+###
+
+GET http://localhost:8080/numbers/generateNext/
