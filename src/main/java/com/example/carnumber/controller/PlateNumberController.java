@@ -24,7 +24,7 @@ public class PlateNumberController {
 
     @GetMapping("/isExist/{plate}")
     public Boolean isExist(@PathVariable String plate) {
-        return repository.isExists(plate);
+        return repository.isExist(plate);
     }
 
     @GetMapping("/{id}")
